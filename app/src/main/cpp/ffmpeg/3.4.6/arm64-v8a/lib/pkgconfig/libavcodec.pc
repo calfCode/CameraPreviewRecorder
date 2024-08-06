@@ -1,0 +1,14 @@
+prefix=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64
+exec_prefix=${prefix}
+libdir=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64/lib
+includedir=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: libswresample >= 2.9.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -lx264 -lfdk-aac -lm -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}

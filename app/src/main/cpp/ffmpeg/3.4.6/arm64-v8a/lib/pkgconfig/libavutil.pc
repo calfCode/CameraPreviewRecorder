@@ -1,0 +1,14 @@
+prefix=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64
+exec_prefix=${prefix}
+libdir=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64/lib
+includedir=/Bspace/sourceCode/ffmpeg-3.4.6/libs/ffmpeg-x264-fdkaac-merge/arm64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
